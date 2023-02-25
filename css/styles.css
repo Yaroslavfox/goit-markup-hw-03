@@ -28,6 +28,26 @@ body {
 	--hero-portfolio-background-color: #fff;
 	--hero-list-background-color: #fff;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+	outline: 1px solid red;
+}
+
 .link {
 	text-decoration: none;
 }
@@ -36,8 +56,13 @@ body {
 }
 /*______________header_____________ */
 
+.header {
+	padding: 24px 0;
+}
+
 .header-navigation {
 }
+
 .header-logo {
 	font-family: "Raleway";
 	font-weight: 800;
@@ -104,7 +129,9 @@ body {
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: var(--main-title-color);
+	margin-bottom: 48px;
 }
+
 .btn {
 	font-family: "Roboto", "sans-serif";
 	font-weight: 500;
@@ -114,6 +141,7 @@ body {
 	letter-spacing: 0.04em;
 	color: var(--btn-color);
 	background-color: var(--btn-background-color);
+	margin-bottom: 48px;
 }
 
 .btn:hover,
