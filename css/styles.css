@@ -29,6 +29,7 @@ body {
 	--hero-list-background-color: #fff;
 	--basic-margin-title: 8px;
 	--basic-padding: 120px 0;
+	--basic-gap-img: 24px;
 }
 
 h1,
@@ -47,7 +48,7 @@ ul {
 .container {
 	width: 1158px;
 	margin: 0 auto;
-	padding: 0 156px;
+	padding: 0 15px;
 	outline: 1px solid red;
 }
 
@@ -70,6 +71,7 @@ img {
 .header-container {
 	display: flex;
 	align-items: center;
+	padding: 24px 0;
 }
 
 .header-navigation {
@@ -96,6 +98,7 @@ img {
 .header-list {
 	display: flex;
 	gap: 40px;
+	align-items: center;
 }
 
 .header-item {
@@ -118,6 +121,9 @@ img {
 .header-adress {
 	font-style: normal;
 	display: flex;
+}
+address {
+	margin-left: auto;
 }
 
 .header-mail {
@@ -148,11 +154,11 @@ img {
 .hero {
 	background-color: var(--hero-background-color);
 	display: block;
-	padding: var(--basic-padding);
 }
 
 .hero {
-	padding: var(--basic-padding);
+	align-items: center;
+	padding: 188px;
 }
 
 .hero-title {
@@ -162,7 +168,13 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--main-title-color);
 	width: 496px;
+
 	margin-bottom: 48px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-container {
 }
 
 .btn {
@@ -174,16 +186,15 @@ img {
 	letter-spacing: 0.04em;
 	color: var(--btn-color);
 	background-color: var(--btn-background-color);
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
 }
 
 .btn:hover,
 .btn:focus {
 	background-color: var(--btn-focus-background-color);
 	color: var(--btn-focus-background-color-noactiv);
-}
-
-.btn {
-	cursor: pointer;
 }
 
 /* our scills */
@@ -201,8 +212,10 @@ img {
 }
 
 .scills-list {
-	display: block;
+	display: flex;
+	justify-content: space-between;
 	padding: var(--basic-padding);
+	align-items: center;
 }
 
 .scills-list-item {
@@ -243,6 +256,8 @@ img {
 }
 
 .about-list {
+	display: flex;
+	gap: var(--basic-gap-img);
 }
 
 .about-list-item {
@@ -262,13 +277,20 @@ img {
 	text-transform: capitalize;
 	color: var(--second-title-color);
 	margin-bottom: 72px;
+	text-align: center;
 }
 
 .members-list {
+	display: flex;
+	gap: var(--basic-gap-img);
 }
 
 .members-list-item {
 	background-color: var(--members-list-item-background-color);
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .members-list-item-name {
@@ -279,6 +301,8 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--second-title-color);
 	margin-bottom: var(--basic-margin-title);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .members-list-item-name-text {
@@ -288,12 +312,19 @@ img {
 
 	letter-spacing: 0.02em;
 	color: var(--text-color);
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* footer */
 .footer {
 	background-color: var(--footer-background-color);
 	padding: 100px 0;
+}
+
+.container-footer {
+	display: block;
 }
 
 .footer-logo {
@@ -318,6 +349,7 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--footer-text-color);
+	width: 264px;
 }
 
 /* __________portfolio__________ */
@@ -326,17 +358,45 @@ img {
 	background-color: var(--hero-portfolio-background-color);
 }
 
-.hero-list {
-	background-color: var(--hero-list-background-color);
+.hero-portfolio-container {
+	display: flex;
+	padding: 96px 72px;
 }
 
+.hero-list {
+	background-color: var(--hero-list-background-color);
+	display: flex;
+	gap: var(--basic-gap-img);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 96px auto;
+}
+
+.btn-portfolio {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 24px;
+}
+
+/* section portfolio */
+
 .portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
 }
 
 .list {
 }
 
 .portfoilio-item {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .porfolio-item-link {
@@ -348,6 +408,10 @@ img {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--second-title-color);
+	margin-top: 32px;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .portfolio-headline-text {
@@ -356,4 +420,8 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-color);
+	margin-top: 8px;
+
+	margin-left: auto;
+	margin-right: auto;
 }
